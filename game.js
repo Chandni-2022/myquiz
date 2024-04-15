@@ -220,3 +220,28 @@
 
         // Start the game initially
         startGame();
+     // Your existing JavaScript code for the quiz
+
+// Function to show options after completing the quiz
+showOptions = () => {
+    // Hide the quiz elements
+    document.getElementById('game').classList.add('hidden');
+
+    // Show the options buttons
+    document.getElementById('reattemptButton').classList.remove('hidden');
+    document.getElementById('goHomeButton').classList.remove('hidden');
+};
+
+// Event listener for reattempt button
+document.getElementById('reattemptButton').addEventListener('click', () => {
+    // Redirect the user to the quiz page or reset the quiz
+    // For example:
+    // window.location.href = 'quiz.html'; // Replace 'quiz.html' with your quiz page
+});
+
+// Event listener for go home button
+document.getElementById('goHomeButton').addEventListener('click', () => {
+    // Redirect the user to the home page
+    // For example:
+    // window.location.href = 'index.html'; // Replace 'index.html' with your home page
+});
